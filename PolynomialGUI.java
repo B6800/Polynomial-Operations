@@ -1,5 +1,5 @@
+//Javafx is used
 import javafx.scene.control.*;
-
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
@@ -179,6 +179,7 @@ import java.util.Optional;
          updatePolynomialList();
          outputLabel.setText("Added polynomials. Result: " + result);
      }
+  //Logic for calculating the derivative
      private void calculateDerivative() {
          int id = promptForPolynomialID("Enter the ID of the polynomial to derive:");
          Polynomial poly = polynomialList.getById(id);
